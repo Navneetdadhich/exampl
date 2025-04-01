@@ -6,11 +6,12 @@ const SalesOrder = () => {
   return (
 
       <>
-      <div  className="w-full h-10 border-b border-gray-300 pl-2
+      <div  className="w-full h-10 border-b-2 border-blue-200 
       ">
 
-      <h2 className='font-medium text-gray-500'>Order Details</h2>
+      <h2 className='font-medium text-gray-500'>Sales Order Details</h2>
       </div>
+      
     <div className='flex flex-row max-w-4xl gap-20 items-center justify-between'>
 
 
@@ -26,7 +27,7 @@ const SalesOrder = () => {
         <InsideOrder text1="Payment Terms" text2="Quarterly" />
         </div>
 
-        <div className='flex flex-col items-end h-20 gap-8'>
+        <div className='flex flex-col h-20 gap-8'>
         
         <InsideOrder text1="Reference Number" text2="3456-2342556" />
         <InsideOrder text1="Delivery Method" text2="3456364567" />

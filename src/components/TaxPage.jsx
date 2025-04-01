@@ -29,7 +29,7 @@ const TaxPage = () => {
         </div>
 
 
-        <div className='mx-5 rounded-md border border-gray-200 shadow-md p-4'>
+        <div className='mx-5 rounded-md border border-gray-200 bg-white shadow-md p-4'>
           <div className="flex flex-wrap justify-between">
             <OrderCard 
               title="Total Stock Price" 
@@ -39,14 +39,20 @@ const TaxPage = () => {
             <OrderCard 
               title="Expiring Today" 
               value="0 kg" 
+              border={false} 
+
             />
             <OrderCard 
               title="Expiring Within 30 Days" 
               value="100 kg" 
+              border={false} 
+
             />
             <OrderCard 
               title="Expiry Stock Price" 
               value="$ 20,000.00" 
+              border={false} 
+
             />
             <OrderCard 
               title="Avg. No. of Stock expiring this year" 
@@ -56,11 +62,11 @@ const TaxPage = () => {
           </div>
         </div>
 
-        <div className='border border-gray-200 shadow-xs rounded-md p-10 mr-5 ml-5'>
+        <div className='max-w-5xl shadow-xs rounded-md p-10 mr-5 ml-5'>
         <SalesOrder/>
         </div>
 
-        <div className='border border-gray-200 shadow-xs rounded-md p-10 mr-5 ml-5'>
+        <div className=' rounded-md p-10 mr-5 ml-5'>
         
         <ItemDetailsTable/>
         </div>

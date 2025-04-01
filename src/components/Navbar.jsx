@@ -14,10 +14,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex flex-col gap-6 w-full border-b-2 border-blue-200 pb-2">
-      {/* Top section with breadcrumb and search */}
+    <nav className="flex flex-col gap-6 w-full border-b-2 border-blue-200">
+    
       <div className="flex justify-between items-center p-4">
-        {/* Breadcrumb navigation */}
+        
         <div className="flex items-center gap-3">
           <FaArrowRight className="text-2xl" />
           <div className="flex items-center gap-2">
@@ -25,14 +25,14 @@ const Navbar = () => {
             <IoIosArrowForward />
             <p>Sales Order</p>
             <IoIosArrowForward />
-            <p className="text-blue-500">XYZ Pharmaxy Pvt. Ltd</p>
+            <p className="text-indigo-500">XYZ Pharmaxy Pvt. Ltd.</p>
           </div>
         </div>
 
-        {/* Search and notification */}
+        
         <div className="flex items-center gap-4">
-          {/* Search input */}
-          <div className="flex items-center gap-2 border border-gray-300 rounded-lg p-2 w-[300px]">
+        
+          <div className="flex items-center bg-white gap-2 border border-gray-300 rounded-lg p-2 w-[300px]">
             <MdOutlineSearch className="text-2xl text-gray-400" />
             <input 
               type="text" 
@@ -41,7 +41,7 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Notification bell */}
+          
           <div className="relative">
             <FaBell className="text-2xl cursor-pointer" />
             <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-red-600"></span>
@@ -49,14 +49,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Bottom navigation tabs */}
+     
       <div className="flex gap-10 ml-3">
         {navItems.map((item, index) => (
           <button
             key={index}
             className={`pb-2 cursor-pointer ${
               item.active 
-                ? "border-b-2 border-blue-500 font-medium" 
+                ? "border-b-4 border-blue-500 font-medium" 
                 : "text-gray-400"
             }`}
           >
